@@ -168,7 +168,7 @@ class Mod1Controller extends ActionController
             '12.4.15' => ['size' => 815],
             '12.4.16' => ['size' => 815],
             '12.4.17' => ['size' => 815],
-            '13.3.0-dev' => ['size' => 747],
+            '13.4.4' => ['size' => 747],
         ]
     ];
 
@@ -442,7 +442,9 @@ class Mod1Controller extends ActionController
     public function indexAction(): ResponseInterface
     {
         $this->moduleTemplate->assignMultiple($this->globalTemplateVars);
-        return $this->moduleTemplate->renderResponse();
+
+        return $this->moduleTemplate->renderResponse('Mod1/Index');
+
     }
 
     /**

@@ -65,8 +65,8 @@ class Sha1Controller extends ActionController
      * compare all files in public/typo3 against precompiled SHA1 in Resources/Private/SHA1/ (~450kB each)
      * precompiled file generated. Generate it like that:
      * cd ./vendor
-     * find ./typo3 -type f -name "*.php" -exec sha1sum {} \; | gzip > /Users/martin/github/typo3-ext-sysinfo/Resources/Private/SHA1/13.4.0/typo3_files_php.txt.gz
-     * find ./typo3 -type f -name "*.js" -exec sha1sum {} \; | gzip > /Users/martin/github/typo3-ext-sysinfo/Resources/Private/SHA1/13.4.0/typo3_files_js.txt.gz
+     * find ./typo3 -type f -name "*.php" -exec sha1sum {} \; | gzip > /Users/martin/github/typo3-ext-sysinfo/Resources/Private/SHA1/13.4.4/typo3_files_php.txt.gz
+     * find ./typo3 -type f -name "*.js" -exec sha1sum {} \; | gzip > /Users/martin/github/typo3-ext-sysinfo/Resources/Private/SHA1/13.4.4/typo3_files_js.txt.gz
      * a line looks like this: 5964dd3a9fcc9d3141415b1b8511b8938e1aabf0  ./typo3/index.php%
      * Install full set of typo3 using Composer Helper from: https://get.typo3.org/misc/composer/helper
      *
