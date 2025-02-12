@@ -11,7 +11,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
  * Sys log entry repository extended
  */
-class LogEntryRepository extends \TYPO3\CMS\Belog\Domain\Repository\LogEntryRepository
+readonly class LogEntryRepository extends \TYPO3\CMS\Belog\Domain\Repository\LogEntryRepository
 {
 
     /**
