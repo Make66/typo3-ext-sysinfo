@@ -1116,6 +1116,10 @@ class Mod1Controller extends ActionController
                 // Should be linkeable too
                 $rootLine = [];
             }
+
+            // why can this be empty?
+            if (empty($rootLineArray[0])) continue;
+
             $siteRoot = $rootLineArray[0]['title'];
             unset($rootLineArray[0]);
 
