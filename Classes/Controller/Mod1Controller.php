@@ -995,6 +995,10 @@ class Mod1Controller extends ActionController
                 // This could be improved by handing in a Context object and decide whether hidden pages
                 // Should be linkeable too
             }
+
+            // why can this be empty?
+            if (empty($rootLineArray[0])) continue;
+
             $siteRoot = (!empty($rootLineArray[0]['title']))
                 ? $rootLineArray[0]['title']
                 : '* no title *';
@@ -1067,7 +1071,13 @@ class Mod1Controller extends ActionController
                 // This could be improved by handing in a Context object and decide whether hidden pages
                 // Should be linkeable too
             }
-            $siteRoot = (!empty($rootLineArray[0]['title'])) ? $rootLineArray[0]['title'] : '* no title *';
+
+            // why can this be empty?
+            if (empty($rootLineArray[0])) continue;
+
+            $siteRoot = (!empty($rootLineArray[0]['title']))
+                ? $rootLineArray[0]['title']
+                : '* no title *';
             unset($rootLineArray[0]);
 
             $rLTemp = [];
